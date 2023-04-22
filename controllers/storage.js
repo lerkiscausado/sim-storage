@@ -51,6 +51,7 @@ const createItem = async (req, res)=>{
         }
         //const data =await storageModel.create(fileData)
         //res.send({data})
+        console.log(fileData)
         res.send({message:"CREATE_ITEM"})
     } catch (error) {
         handleHttpError(res,"ERROR_CREATE_ITEM")
